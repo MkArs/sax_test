@@ -1,51 +1,53 @@
 package com.mkhitaryan.test.sax;
 
-import javax.xml.soap.*;
-import javax.xml.transform.*;
-import javax.xml.transform.stream.StreamResult;
+import javax.xml.parsers.SAXParser;
+import javax.xml.parsers.SAXParserFactory;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 public class Test {
     public void begin(){
-        SOAPMessage soapMessage = null;
+        String url = "https://www.cbr.ru/scripts/XML_daily.asp";
+        URL obj = null;
+
         try {
-            soapMessage = MessageFactory.newInstance(SOAPConstants.SOAP_1_2_PROTOCOL).createMessage();
-            SOAPPart part = soapMessage.getSOAPPart();
-            SOAPEnvelope envelope = part.getEnvelope();
-            SOAPBody body = envelope.getBody();
-            Name bodyName = envelope.createName("AllDataInfoXML", null, "http://web.cbr.ru/");
-            body.addBodyElement(bodyName);
-            soapMessage.saveChanges();
-            System.out.println(soapMessage); //
+            obj = new URL(url);
 
-            //Отправка сообщения и получение ответа
-            //Установка адресата
-            String destination = "http://www.cbr.ru/DailyInfoWebServ/DailyInfo.asmx";
-            //Отправка
-            SOAPConnectionFactory soapConnFactory = SOAPConnectionFactory.newInstance();
-            SOAPConnection connection = soapConnFactory.createConnection();
-            SOAPMessage reply = connection.call(soapMessage, destination);
+        } catch (MalformedURLException e) {
+            throw new RuntimeException(e);
+        }
 
-            //ответ
-            //Проверка полученного ответа
-            System.out.println("\nRESPONSE:\n");
-            //Создание XSLT-процессора
-            TransformerFactory transformerFactory = TransformerFactory.newInstance();
-            Transformer transformer = null;
-            try {
-                transformer = transformerFactory.newTransformer();
-            } catch (TransformerConfigurationException e) {
-                throw new RuntimeException(e);
+        HttpURLConnection connection = null;
+
+        try {
+            connection = (HttpURLConnection) obj.openConnection();
+            connection.setRequestMethod("GET");
+
+            BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+            String inputLine;
+            StringBuffer response = new StringBuffer();
+
+            while ((inputLine = in.readLine()) != null) {
+                response.append(inputLine);
             }
-            //Получение содержимого ответа
-            Source sourceContent = reply.getSOAPPart().getContent();
-            //Задание выходного потока для результата преобразования
-            StreamResult result = new StreamResult(System.out);
+
+            in.close();
+
+            //SAX парсер
             try {
-                transformer.transform(sourceContent, result);
-            } catch (TransformerException e) {
-                throw new RuntimeException(e);
+                SAXParserFactory factory = SAXParserFactory.newInstance();
+                SAXParser parser = factory.newSAXParser();
+                TestSAXHandler handler = new TestSAXHandler();
+                parser.parse(response.toString(), handler);
+                System.out.println("SAX parser result:\n" + handler.getResult());
+            } catch (Exception e) {
+                e.printStackTrace();
             }
-        } catch (SOAPException e) {
+        } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
