@@ -29,15 +29,11 @@ public class TestSAXHandler extends DefaultHandler {
     @Override
     public void characters(char[] ch, int start, int length)
             throws SAXException {
-        String value = "";
 
-//содержимое тега
-        for (int i = start; i < length; i++){
-            value += ch[i];
-        }
+        String value = new String(ch, start, length);
 
         if (value.length() != 0)
-            result.append("Element content = '" + value.trim() + "'\n");
+                result.append("Element content = '" + value.trim() + "'\n");
     }
 
     @Override
