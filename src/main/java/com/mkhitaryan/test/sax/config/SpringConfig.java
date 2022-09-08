@@ -67,8 +67,8 @@ public class SpringConfig implements WebMvcConfigurer {
 
         dataSource.setDriverClassName("org.postgresql.Driver");
         dataSource.setUrl("jdbc:postgresql://localhost:5432/converter_db");
-        dataSource.setUsername("postgres");
-        dataSource.setPassword("postgres");
+         dataSource.setUsername("postgres");
+         dataSource.setPassword("postgres");
 
         return dataSource;
     }
@@ -93,7 +93,7 @@ public class SpringConfig implements WebMvcConfigurer {
     public LocalSessionFactoryBean getSessionFactory() {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setDataSource(dataSource());
-        sessionFactory.setPackagesToScan(new String[] { "com.bytestree.model" });
+        sessionFactory.setPackagesToScan(new String[] { "com.mkhitaryan.test.sax" });
         sessionFactory.setHibernateProperties(getHibernateProperties());
         return sessionFactory;
     }
