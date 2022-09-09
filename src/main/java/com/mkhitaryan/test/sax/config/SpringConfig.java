@@ -1,6 +1,7 @@
 package com.mkhitaryan.test.sax.config;
 
 import org.hibernate.cfg.AvailableSettings;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -22,18 +23,19 @@ import java.util.Properties;
 
 @Configuration
 @ComponentScan("com.mkhitaryan.test.sax")
+@PropertySource("classpath:application.properties")
 @EnableWebMvc
 public class SpringConfig implements WebMvcConfigurer {
 
     private final ApplicationContext applicationContext;
 
     @Autowired
-    public SpringConfig(ApplicationContext applicationContext, Environment env) {
+    public SpringConfig(ApplicationContext applicationContext) {
         this.applicationContext = applicationContext;
-        this.env = env;
     }
 
-    private final Environment env;
+    @Autowired
+    private Environment env;
     @Bean
     public SpringResourceTemplateResolver templateResolver() {
         SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
@@ -82,10 +84,7 @@ public class SpringConfig implements WebMvcConfigurer {
         Properties properties = new Properties();
         properties.put(AvailableSettings.DIALECT, env.getProperty("hibernate.dialect"));
         properties.put(AvailableSettings.SHOW_SQL, env.getProperty("hibernate.show_sql"));
-        // properties.put(AvailableSettings.STATEMENT_BATCH_SIZE, env.getRequiredProperty("hibernate.batch.size"));
-        properties.put(AvailableSettings.HBM2DDL_AUTO, env.getProperty("hibernate.hbm2ddl.auto")); // ?????
-        // properties.put(AvailableSettings.CURRENT_SESSION_CONTEXT_CLASS, env.getRequiredProperty("hibernate.current.session.context.class"));
-        // properties.put(AvailableSettings.SESSION_FACTORY_NAME, env.getRequiredProperty("sessionFactory"));
+        properties.put(AvailableSettings.HBM2DDL_AUTO, env.getProperty("hibernate.hbm2ddl.auto"));
         return properties;
     }
 
