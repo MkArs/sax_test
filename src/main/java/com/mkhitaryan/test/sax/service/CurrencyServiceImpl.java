@@ -10,7 +10,7 @@ public class CurrencyServiceImpl implements CurrencyService{
     @Autowired
     private CurrencyDAO currencyDAO;
     @Override
-    @Transactional
+    @Transactional(transactionManager = "transactionManager")
     public void updateCurrencies() {
         currencyDAO.updateCurrencies();
     }
