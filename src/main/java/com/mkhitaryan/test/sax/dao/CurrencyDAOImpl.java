@@ -12,7 +12,6 @@ import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 
 @Repository
-@Transactional
 public class CurrencyDAOImpl implements CurrencyDAO{
     @Autowired
     private SessionFactory sessionFactory;
