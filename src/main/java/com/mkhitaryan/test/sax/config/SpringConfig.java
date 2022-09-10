@@ -65,37 +65,37 @@ public class SpringConfig implements WebMvcConfigurer {
         registry.viewResolver(resolver);
     }
 
-    @Bean
-    public DataSource dataSource() {
-        DriverManagerDataSource dataSource = new DriverManagerDataSource();
+//    @Bean
+//    public DataSource dataSource() {
+//        DriverManagerDataSource dataSource = new DriverManagerDataSource();
+//
+//        dataSource.setDriverClassName("org.postgresql.Driver");
+//        dataSource.setUrl(env.getProperty("datasource.jdbc.url"));
+//        dataSource.setUsername(env.getProperty("datasource.user"));
+//        dataSource.setPassword(env.getProperty("datasource.password"));
+//
+//        return dataSource;
+//    }
+//
+//    @Bean
+//    public JdbcTemplate jdbcTemplate() {
+//        return new JdbcTemplate(dataSource());
+//    }
 
-        dataSource.setDriverClassName("org.postgresql.Driver");
-        dataSource.setUrl(env.getProperty("datasource.jdbc.url"));
-        dataSource.setUsername(env.getProperty("datasource.user"));
-        dataSource.setPassword(env.getProperty("datasource.password"));
+//    private Properties getHibernateProperties() {
+//        Properties properties = new Properties();
+//        properties.put(AvailableSettings.DIALECT, env.getProperty("hibernate.dialect"));
+//        properties.put(AvailableSettings.SHOW_SQL, env.getProperty("hibernate.show_sql"));
+//        properties.put(AvailableSettings.HBM2DDL_AUTO, env.getProperty("hibernate.hbm2ddl.auto"));
+//        return properties;
+//    }
 
-        return dataSource;
-    }
-
-    @Bean
-    public JdbcTemplate jdbcTemplate() {
-        return new JdbcTemplate(dataSource());
-    }
-
-    private Properties getHibernateProperties() {
-        Properties properties = new Properties();
-        properties.put(AvailableSettings.DIALECT, env.getProperty("hibernate.dialect"));
-        properties.put(AvailableSettings.SHOW_SQL, env.getProperty("hibernate.show_sql"));
-        properties.put(AvailableSettings.HBM2DDL_AUTO, env.getProperty("hibernate.hbm2ddl.auto"));
-        return properties;
-    }
-
-    @Bean
-    public LocalSessionFactoryBean getSessionFactory() {
-        LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
-        sessionFactory.setDataSource(dataSource());
-        sessionFactory.setPackagesToScan(new String[] { "com.mkhitaryan.test.sax" });
-        sessionFactory.setHibernateProperties(getHibernateProperties());
-        return sessionFactory;
-    }
+//    @Bean
+//    public LocalSessionFactoryBean getSessionFactory() {
+//        LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
+//        sessionFactory.setDataSource(dataSource());
+//        sessionFactory.setPackagesToScan(new String[] { "com.mkhitaryan.test.sax" });
+//        sessionFactory.setHibernateProperties(getHibernateProperties());
+//        return sessionFactory;
+//    }
 }
