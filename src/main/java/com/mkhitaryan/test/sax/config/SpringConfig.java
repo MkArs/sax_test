@@ -23,6 +23,7 @@ import java.util.Properties;
 
 @Configuration
 @ComponentScan("com.mkhitaryan.test.sax")
+@PropertySource("classpath:application.properties")
 @EnableWebMvc
 public class SpringConfig implements WebMvcConfigurer {
 
