@@ -23,6 +23,7 @@ import javax.sql.DataSource;
 import java.util.Properties;
 
 @Configuration
+@EnableTransactionManagement
 @ComponentScan("com.mkhitaryan.test.sax")
 @PropertySource("classpath:application.properties")
 @EnableWebMvc
