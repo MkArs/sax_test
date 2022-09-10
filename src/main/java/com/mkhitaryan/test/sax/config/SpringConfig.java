@@ -22,6 +22,7 @@ import javax.sql.DataSource;
 import java.util.Properties;
 
 @Configuration
+@PropertySource(value = "classpath:application.properties")
 @ComponentScan("com.mkhitaryan.test.sax")
 @EnableWebMvc
 public class SpringConfig implements WebMvcConfigurer {
