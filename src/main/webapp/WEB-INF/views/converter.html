@@ -15,13 +15,10 @@
     <h2>Конвертер валют</h2>
     <div>
         <select name="fromValute" id="fromValute" style="margin: 20px; width: 225px">
-            <option th:each="currency : ${allCurrencies}" th:value="${currency.name}" th:label = "${currency.name}"></option>
+            <option th:each="currency : ${allCurrencies}" th:value="${currency}" th:label = "${currency.name}"></option>
         </select>
         <select name="toValute" id="toValute" style="margin: 20px; width: 225px">
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
+            <option th:each="currency : ${allCurrencies}" th:value="${currency}" th:label = "${currency.name}"></option>
         </select>
         <br>
         <input type="text" name="fromAmount" id="fromAmount" style="margin: 20px">
