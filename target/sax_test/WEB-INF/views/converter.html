@@ -15,7 +15,7 @@
     <h2>Конвертер валют</h2>
     <div>
         <select name="fromValute" id="fromValute" style="margin: 20px; width: 225px">
-            <option th:each="currency : ${allCurrencies}" value="${currency.name}" label = value></option>
+            <option th:each="currency : ${allCurrencies}" value="${currency.name}" label = "${currency.name}"></option>
         </select>
         <select name="toValute" id="toValute" style="margin: 20px; width: 225px">
             <option value="volvo">Volvo</option>
