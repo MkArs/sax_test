@@ -43,8 +43,7 @@ public class CurrencyDAOImpl implements CurrencyDAO{
     @Override
     public List<Currency> fillCurrencyDropdown() {
         Session session = sessionFactory.getCurrentSession();
-        //List<Currency> allCurrencies = session.createQuery("from Currencies", Currency.class).getResultList();
-        List<Currency> allCurrencies = session.createQuery("SELECT * FROM Currencies").getResultList();
+        List<Currency> allCurrencies = session.createQuery("from Currency", Currency.class).getResultList();
         return allCurrencies;
     }
 }
