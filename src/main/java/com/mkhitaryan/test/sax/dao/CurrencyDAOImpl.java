@@ -10,6 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
+import java.util.List;
 
 @Repository
 public class CurrencyDAOImpl implements CurrencyDAO{
@@ -38,4 +39,12 @@ public class CurrencyDAOImpl implements CurrencyDAO{
             e.printStackTrace();
         }
     }
+
+    @Override
+    public List<Currency> fillCurrencyDropdown() {
+        Session session = sessionFactory.getCurrentSession();
+        List<Currency> allCurrencies = session.createQuery("from currencies", Currency.class).getResultList();
+        return allCurrencies;
+    }
 }
+
