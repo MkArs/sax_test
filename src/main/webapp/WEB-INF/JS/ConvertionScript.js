@@ -1,3 +1,4 @@
 function convert(){
-    alert(document.getElementById("fromAmount").textContent);
+    alert(1);
+    //alert(document.getElementById("fromAmount").textContent);
 }
