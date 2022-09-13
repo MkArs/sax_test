@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
+    <script type = "text/javascript" src="C:\Users\Арсен\IdeaProjects\sax_test\src\main\webapp\WEB-INF\JS\ConvertionScript.js"></script>
     <style>
         h2 {text-align: center;}
         form {background-color: lightgrey; }
@@ -15,19 +16,16 @@
     <h2>Конвертер валют</h2>
     <div>
         <select name="fromValute" id="fromValute" style="margin: 20px; width: 225px">
-            <option th:each="currency : ${allCurrencies}" th:value="${currency.name}" th:label = "${currency.name}"></option>
+            <option th:each="currency : ${allCurrencies}" th:value="${currency}" th:label = "${currency.name}"></option>
         </select>
         <select name="toValute" id="toValute" style="margin: 20px; width: 225px">
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
+            <option th:each="currency : ${allCurrencies}" th:value="${currency}" th:label = "${currency.name}"></option>
         </select>
         <br>
         <input type="text" name="fromAmount" id="fromAmount" style="margin: 20px">
         <input type="text" name="toAmount" id="toAmount" style="margin: 20px">
         <br>
-        <button type="button" style="background-color: gray; width: 225px; margin: 20px" onclick="alert('You pressed the button!')">Конвертировать</button>
+        <button type="button" style="background-color: gray; width: 225px; margin: 20px" onclick="convert()">Конвертировать</button>
     </div>
 </form>
 
