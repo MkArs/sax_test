@@ -25,13 +25,35 @@
         <input type="text" name="fromAmount" id="fromAmount" style="margin: 20px">
         <input type="text" name="toAmount" id="toAmount" style="margin: 20px">
         <br>
-        <button type="button" style="background-color: gray; width: 225px; margin: 20px" onclick="convert();">Конвертировать</button>
+        <button type="button" style="background-color: gray; width: 225px; margin: 20px" onclick="conversionIntoDB();">Конвертировать</button>
     </div>
 </form>
 </body>
 <script>
-    function convert(){
-        alert(document.getElementById("fromAmount").value);
+    //import Big from 'big.js';
+
+    const VALID_INPUT_LENGTH = 18;
+
+    function conversionIntoDB(){
+        let sumToConvert = document.getElementById("fromAmount").value;
+
+        if (!checkValidation(sumToConvert)) return;
+
+        let fromValute = document.getElementById("fromValute");
+
+        alert(fromValute.nominal);
+    }
+
+    function checkValidation(sumToConvert){
+        sumToConvert = sumToConvert.substring(0,VALID_INPUT_LENGTH);
+
+        document.getElementById("fromAmount").value = sumToConvert;
+
+        return Number.isInteger(sumToConvert) || (isFloat(sumToConvert))
+    }
+
+    function isFloat(n){
+        return Number(n) === n && n % 1 !== 0;
     }
 </script>
 </html>
