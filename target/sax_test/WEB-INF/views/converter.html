@@ -15,10 +15,10 @@
     <h2>Конвертер валют</h2>
     <div>
         <select name="fromValute" id="fromValute" style="margin: 20px; width: 225px">
-            <option th:each="currency : ${allCurrencies}" th:value="${currency}" th:nominal ="${currency.nominal}" th:label = "${currency.name}"></option>
+            <option th:each="currency : ${allCurrencies}" th:nominal ="${currency.nominal}" th:value="${currency.value}" th:label = "${currency.name}"></option>
         </select>
         <select name="toValute" id="toValute" style="margin: 20px; width: 225px">
-            <option th:each="currency : ${allCurrencies}" th:value="${currency}" th:label = "${currency.name}"></option>
+            <option th:each="currency : ${allCurrencies}" th:nominal ="${currency.nominal}" th:value="${currency.value}" th:label = "${currency.name}"></option>
         </select>
         <br>
         <input type="text" name="fromAmount" id="fromAmount" style="margin: 20px">
@@ -27,18 +27,30 @@
         <button type="button" style="background-color: gray; width: 225px; margin: 20px" onclick="conversionIntoDB();">Конвертировать</button>
     </div>
 </form>
-</body>
+<script th:src="@{/WEB-INF/views/big.js}"></script>
 <script type = "text/javascript">
-    //import Big from 'big.js';
-
     function conversionIntoDB(){
         let sumToConvert = document.getElementById("fromAmount").value;
 
         if (!checkValidation(sumToConvert)) return;
-
+        sumToConvert = new Big(sumToConvert);
+        alert(sumToConvert);
         let fromValute = document.getElementById("fromValute");
-
-        alert(fromValute.options[fromValute.selectedIndex].attributes.getNamedItem("nominal").value);
+        let toValute = document.getElementById("toValute");
+        alert(sumToConvert);
+        let fromNominal = new Big(fromValute.options[fromValute.selectedIndex].attributes.getNamedItem("nominal").value);
+        let fromValue = new Big(fromValute.options[fromValute.selectedIndex].attributes.getNamedItem("value").value);
+        let toNominal = new Big(toValute.options[toValute.selectedIndex].attributes.getNamedItem("nominal").value);
+        let toValue = new Big(toValute.options[toValute.selectedIndex].attributes.getNamedItem("value").value);
+        alert(sumToConvert);
+        let fromUnit = fromValue / fromNominal;
+        let toUnit = toValue / toNominal;
+        alert(sumToConvert);
+        alert(fromNominal);
+        alert(fromValue);
+        alert(toNominal);
+        alert(toValue);
+        document.getElementById("toAmount").value = toUnit * sumToConvert / fromUnit;
     }
 
     function checkValidation(sumToConvert){
@@ -47,4 +59,6 @@
         return regexp.test(sumToConvert);
     }
 </script>
+</body>
+
 </html>
