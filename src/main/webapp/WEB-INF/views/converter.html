@@ -36,9 +36,9 @@
 
         if (!checkValidation(sumToConvert)) return;
 
-        //let fromValute = document.getElementById("fromValute");
+        let fromValute = document.getElementById("fromValute");
 
-        alert(sumToConvert);
+        alert(fromValute.options[fromValute.selectedIndex].charCode);
     }
 
     function checkValidation(sumToConvert){
