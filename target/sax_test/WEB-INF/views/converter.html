@@ -15,7 +15,7 @@
     <h2>Конвертер валют</h2>
     <div>
         <select name="fromValute" id="fromValute" style="margin: 20px; width: 225px">
-            <option th:each="currency : ${allCurrencies}" th:value="${currency}" th:label = "${currency.name}"></option>
+            <option th:each="currency : ${allCurrencies}" th:value="${currency}" th:nominal ="${currency.nominal}" th:label = "${currency.name}"></option>
         </select>
         <select name="toValute" id="toValute" style="margin: 20px; width: 225px">
             <option th:each="currency : ${allCurrencies}" th:value="${currency}" th:label = "${currency.name}"></option>
@@ -38,7 +38,7 @@
 
         let fromValute = document.getElementById("fromValute");
 
-        alert(fromValute.options[fromValute.selectedIndex].value.charCode);
+        alert(fromValute.options[fromValute.selectedIndex].attributes.getNamedItem("nominal").value);
     }
 
     function checkValidation(sumToConvert){
