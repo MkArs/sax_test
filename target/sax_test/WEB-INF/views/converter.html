@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <script type = "text/javascript"></script>
     <style>
         h2 {text-align: center;}
         form {background-color: lightgrey; }
@@ -29,19 +28,21 @@
     </div>
 </form>
 </body>
-<script>
+<script type = "text/javascript">
     //import Big from 'big.js';
 
     const VALID_INPUT_LENGTH = 18;
 
     function conversionIntoDB(){
+        alert(1);
+
         let sumToConvert = document.getElementById("fromAmount").value;
 
         if (!checkValidation(sumToConvert)) return;
 
         let fromValute = document.getElementById("fromValute");
 
-        alert(1);
+        alert(2);
     }
 
     function checkValidation(sumToConvert){
@@ -49,6 +50,9 @@
 
         document.getElementById("fromAmount").value = sumToConvert;
 
+        alert(typeof sumToConvert);
+        alert(Number.isInteger(sumToConvert));
+        alert(isFloat(sumToConvert));
         return Number.isInteger(sumToConvert) || (isFloat(sumToConvert))
     }
 
