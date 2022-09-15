@@ -54,10 +54,10 @@ public class SpringConfig implements WebMvcConfigurer {
         registry.viewResolver(resolver);
     }
 
-//    @Override
-//    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-//        registry
-//                .addResourceHandler("/files/**")
-//                .addResourceLocations("file:///C:/opt/files/");
-//    }
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry
+                .addResourceHandler("/files/**")
+                .addResourceLocations("file:///C:/opt/files/");
+    }
 }
