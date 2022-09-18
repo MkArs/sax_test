@@ -1,0 +1,10 @@
+com\mkhitaryan\test\sax\service\CurrencyService.class
+com\mkhitaryan\test\sax\dao\CurrencyDAOImpl.class
+com\mkhitaryan\test\sax\TestSAXHandler.class
+com\mkhitaryan\test\sax\config\MySpringMvcDispatcherSerlvetIntitializer.class
+com\mkhitaryan\test\sax\controller\CurrencyController.class
+com\mkhitaryan\test\sax\config\SpringConfig.class
+com\mkhitaryan\test\sax\entity\Currency.class
+com\mkhitaryan\test\sax\config\HibernateConfig.class
+com\mkhitaryan\test\sax\dao\CurrencyDAO.class
+com\mkhitaryan\test\sax\service\CurrencyServiceImpl.class
