@@ -37,15 +37,7 @@ public class SpringConfig implements WebMvcConfigurer {
         templateResolver.setCharacterEncoding("UTF-8");
         return templateResolver;
     }
-//    @Bean
-//    public SpringResourceTemplateResolver templateResolverSecond() {
-//        SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
-//        templateResolver.setApplicationContext(applicationContext);
-//        templateResolver.setPrefix("/WEB-INF/js/");
-//        templateResolver.setSuffix(".js");
-//        templateResolver.setCharacterEncoding("UTF-8");
-//        return templateResolver;
-//    }
+
     @Bean
     public SpringTemplateEngine templateEngine() {
         SpringTemplateEngine templateEngine = new SpringTemplateEngine();
