@@ -27,29 +27,25 @@
         <button type="button" style="background-color: gray; width: 225px; margin: 20px" onclick="conversionIntoDB();">Конвертировать</button>
     </div>
 </form>
-<script th:src="@{WEB-INF/js/big.html}"></script>
+<script th:src="@{WEB-INF/js/big.js}"></script>
 <script type = "text/javascript">
     function conversionIntoDB(){
         let sumToConvert = document.getElementById("fromAmount").value;
 
         if (!checkValidation(sumToConvert)) return;
         sumToConvert = new Big(sumToConvert);
-        alert(sumToConvert);
+
         let fromValute = document.getElementById("fromValute");
         let toValute = document.getElementById("toValute");
-        alert(sumToConvert);
+
         let fromNominal = new Big(fromValute.options[fromValute.selectedIndex].attributes.getNamedItem("nominal").value);
         let fromValue = new Big(fromValute.options[fromValute.selectedIndex].attributes.getNamedItem("value").value);
         let toNominal = new Big(toValute.options[toValute.selectedIndex].attributes.getNamedItem("nominal").value);
         let toValue = new Big(toValute.options[toValute.selectedIndex].attributes.getNamedItem("value").value);
-        alert(sumToConvert);
+
         let fromUnit = fromValue / fromNominal;
         let toUnit = toValue / toNominal;
-        alert(sumToConvert);
-        alert(fromNominal);
-        alert(fromValue);
-        alert(toNominal);
-        alert(toValue);
+
         document.getElementById("toAmount").value = toUnit * sumToConvert / fromUnit;
     }
 
