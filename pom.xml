@@ -9,7 +9,7 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
-  <name>sax_test Maven Webapp</name>
+  <name>sax_test</name>
   <url>http://localhost:8080/</url>
 
   <properties>
