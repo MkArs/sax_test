@@ -46,7 +46,7 @@
         let fromUnit = fromValue / fromNominal;
         let toUnit = toValue / toNominal;
 
-        document.getElementById("toAmount").value = fromUnit * sumToConvert / toUnit;
+        document.getElementById("toAmount").value = (fromUnit * sumToConvert / toUnit).toFixed(4);
     }
 
     function checkValidation(sumToConvert){
