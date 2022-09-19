@@ -58,7 +58,7 @@ public class SpringConfig implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry
-                .addResourceHandler("/WEB-INF/js/**")
-                .addResourceLocations("/WEB-INF/js/");
+                .addResourceHandler("/js/**")
+                .addResourceLocations("/js/");
     }
 }
