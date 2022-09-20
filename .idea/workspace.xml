@@ -9,8 +9,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e824a26e-1061-44e2-8752-ac43dbdcdc61" name="Changes" comment="Fixing login mechanism">
+    <list default="true" id="9516f0ea-2ac1-46dc-add7-3d122d56ddd2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/config/HibernateConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/config/HibernateConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/config/MySpringMvcDispatcherSerlvetIntitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/config/MySpringMvcDispatcherSerlvetIntitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/config/SpringConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/config/SpringConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/config/WebSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/controller/CurrencyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/controller/CurrencyController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/controller/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/dao/CurrencyDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/dao/CurrencyDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/dao/CurrencyDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/dao/CurrencyDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/dao/OperationDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/dao/OperationDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/entity/Currency.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/entity/Currency.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/entity/Operation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/entity/Operation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/handler/TestSAXHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/handler/TestSAXHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/service/CurrencyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/service/CurrencyService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/service/CurrencyServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/service/CurrencyServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +53,7 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2F21ubJHHOyIgqd7FxHYFYyesIM" />
+  <component name="ProjectId" id="2F26aMGx0tCTjdzUZjHUs5yYv97" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -65,7 +81,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="2d42d000-5566-429a-bb66-7b87f65f0075" />
+        <option name="BASE_DIRECTORY_NAME" value="23f1740c-5eef-418c-ab25-430faee8f3d3" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -73,7 +89,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="58568" />
+        <option name="DEBUG_PORT" value="59019" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -146,46 +162,16 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e824a26e-1061-44e2-8752-ac43dbdcdc61" name="Changes" comment="" />
-      <created>1663675596037</created>
+      <changelist id="9516f0ea-2ac1-46dc-add7-3d122d56ddd2" name="Changes" comment="" />
+      <created>1663677900943</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1663675596037</updated>
-      <workItem from="1663675598406" duration="1450000" />
+      <updated>1663677900943</updated>
+      <workItem from="1663677903152" duration="1156000" />
     </task>
-    <task id="LOCAL-00001" summary="Fixing login mechanism">
-      <created>1663675693062</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1663675693062</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Fixing login mechanism">
-      <created>1663675763165</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1663675763165</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixing login mechanism" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing login mechanism" />
   </component>
 </project>
