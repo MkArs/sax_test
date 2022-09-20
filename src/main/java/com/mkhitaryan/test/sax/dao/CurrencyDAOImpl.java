@@ -1,12 +1,11 @@
 package com.mkhitaryan.test.sax.dao;
 
-import com.mkhitaryan.test.sax.TestSAXHandler;
+import com.mkhitaryan.test.sax.handler.TestSAXHandler;
 import com.mkhitaryan.test.sax.entity.Currency;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;

@@ -1,4 +1,4 @@
-package com.mkhitaryan.test.sax;
+package com.mkhitaryan.test.sax.handler;
 
 import com.mkhitaryan.test.sax.entity.Currency;
 import org.xml.sax.Attributes;
