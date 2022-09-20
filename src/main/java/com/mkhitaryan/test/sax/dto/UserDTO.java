@@ -1,5 +1,7 @@
 package com.mkhitaryan.test.sax.dto;
 
+import com.mkhitaryan.test.sax.validation.ValidEmail;
+
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
@@ -8,7 +10,7 @@ public class UserDTO {
     @NotEmpty
     private String password;
     private String matchingPassword;
-
+    @ValidEmail
     @NotNull
     @NotEmpty
     private String email;
