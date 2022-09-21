@@ -11,36 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9516f0ea-2ac1-46dc-add7-3d122d56ddd2" name="Changes" comment="Fixing logging mechanism">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/config/HibernateConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/config/HibernateConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/config/MySpringMvcDispatcherSerlvetIntitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/config/MySpringMvcDispatcherSerlvetIntitializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/config/SpringConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/config/SpringConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/config/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/controller/CurrencyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/controller/CurrencyController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/controller/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/dao/CurrencyDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/dao/CurrencyDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/dao/CurrencyDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/dao/CurrencyDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/dao/OperationDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/dao/OperationDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/entity/Currency.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/entity/Currency.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/entity/Operation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/entity/Operation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/handler/TestSAXHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/handler/TestSAXHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/service/CurrencyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/service/CurrencyService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/service/CurrencyServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/service/CurrencyServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/config/HibernateConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/config/HibernateConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/config/MySpringMvcDispatcherSerlvetIntitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/config/MySpringMvcDispatcherSerlvetIntitializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/config/SpringConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/config/SpringConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/config/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/controller/CurrencyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/controller/CurrencyController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/controller/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/dao/CurrencyDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/dao/CurrencyDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/dao/CurrencyDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/dao/CurrencyDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/dao/OperationDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/dao/OperationDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/entity/Currency.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/entity/Currency.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/entity/Operation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/entity/Operation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/handler/TestSAXHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/handler/TestSAXHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/service/CurrencyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/service/CurrencyService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/service/CurrencyServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/service/CurrencyServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +155,7 @@
       <updated>1663677900943</updated>
       <workItem from="1663677903152" duration="3239000" />
       <workItem from="1663689597218" duration="1063000" />
-      <workItem from="1663740941078" duration="3541000" />
+      <workItem from="1663740941078" duration="6541000" />
     </task>
     <task id="LOCAL-00001" summary="Fixing logging mechanism">
       <created>1663679157818</created>
@@ -256,7 +227,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663689867322</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Fixing logging mechanism">
+      <created>1663745959939</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1663745959939</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Fixing logging mechanism">
+      <created>1663745974576</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1663745974576</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
