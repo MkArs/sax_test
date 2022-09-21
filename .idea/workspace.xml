@@ -11,11 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9516f0ea-2ac1-46dc-add7-3d122d56ddd2" name="Changes" comment="Fixing logging mechanism">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/config/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/config/WebSecurityConfig.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +154,7 @@
       <updated>1663677900943</updated>
       <workItem from="1663677903152" duration="3239000" />
       <workItem from="1663689597218" duration="1063000" />
-      <workItem from="1663740941078" duration="8983000" />
+      <workItem from="1663740941078" duration="12106000" />
     </task>
     <task id="LOCAL-00001" summary="Fixing logging mechanism">
       <created>1663679157818</created>
@@ -273,7 +268,28 @@
       <option name="project" value="LOCAL" />
       <updated>1663751137629</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Fixing logging mechanism">
+      <created>1663755731775</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1663755731775</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Fixing logging mechanism">
+      <created>1663755909412</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1663755909412</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Fixing logging mechanism">
+      <created>1663755956479</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1663755956479</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
