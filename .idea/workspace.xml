@@ -26,8 +26,6 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/handler/TestSAXHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/handler/TestSAXHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/service/CurrencyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/service/CurrencyService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/service/CurrencyServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/service/CurrencyServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/TestSAXHandler.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/config/HibernateConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/config/HibernateConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/config/MySpringMvcDispatcherSerlvetIntitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/config/MySpringMvcDispatcherSerlvetIntitializer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/config/SpringConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/config/SpringConfig.class" afterDir="false" />
@@ -43,18 +41,6 @@
       <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/handler/TestSAXHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/handler/TestSAXHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/service/CurrencyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/service/CurrencyService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/service/CurrencyServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/service/CurrencyServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/lib/spring-aop-5.3.23.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/lib/spring-beans-5.3.23.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/lib/spring-context-5.3.23.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/lib/spring-core-5.3.23.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/lib/spring-expression-5.3.23.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/lib/spring-jcl-5.3.23.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/lib/spring-jdbc-5.3.23.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/lib/spring-orm-5.2.1.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/lib/spring-orm-5.3.23.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/lib/spring-tx-5.3.23.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/lib/spring-web-5.3.23.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/lib/spring-webmvc-5.3.23.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,18 +72,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;bd86f3faa6c705a54c97a008dcd2b8c5&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.65" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.65" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="15" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -196,6 +183,8 @@
       <option name="presentableId" value="Default" />
       <updated>1663677900943</updated>
       <workItem from="1663677903152" duration="3239000" />
+      <workItem from="1663689597218" duration="1063000" />
+      <workItem from="1663740941078" duration="3541000" />
     </task>
     <task id="LOCAL-00001" summary="Fixing logging mechanism">
       <created>1663679157818</created>
@@ -253,7 +242,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663680808383</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Fixing logging mechanism">
+      <created>1663689840714</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1663689840714</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Fixing logging mechanism">
+      <created>1663689867322</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1663689867322</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
