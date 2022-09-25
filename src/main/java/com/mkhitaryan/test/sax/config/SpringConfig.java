@@ -59,8 +59,4 @@ public class SpringConfig implements WebMvcConfigurer {
                 .addResourceLocations("/js/");
     }
 
-    @Override
-    public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/login").setViewName("login");
-    }
 }

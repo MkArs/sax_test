@@ -10,13 +10,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9516f0ea-2ac1-46dc-add7-3d122d56ddd2" name="Changes" comment="Fixing logging mechanism">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/config/MySecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/config/MySecurityInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/views/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/views/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/config/SpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/config/WebSecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/controller/CurrencyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/controller/CurrencyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/controller/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/greeting.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/config/SpringConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/config/SpringConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/config/WebSecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/config/SpringConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/config/SpringConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/config/WebSecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/lib/jakarta.annotation-api-1.3.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/lib/jul-to-slf4j-1.7.36.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/lib/log4j-api-2.17.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/lib/log4j-to-slf4j-2.17.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/lib/logback-classic-1.2.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/lib/logback-core-1.2.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/lib/snakeyaml-1.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/lib/spring-boot-2.7.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/lib/spring-boot-autoconfigure-2.7.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/lib/spring-boot-starter-2.7.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/lib/spring-boot-starter-logging-2.7.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/lib/spring-boot-starter-security-2.7.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/lib/spring-security-config-5.7.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/lib/spring-security-core-5.7.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/lib/spring-security-crypto-5.7.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/lib/spring-security-web-5.7.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/views/greeting.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/views/login.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,15 +85,23 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;OverrideImplement.combined&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/JDK_17&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;bd86f3faa6c705a54c97a008dcd2b8c5&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
   }
 }</component>
   <component name="RunManager">
@@ -156,7 +204,13 @@
       <workItem from="1663677903152" duration="3239000" />
       <workItem from="1663689597218" duration="1063000" />
       <workItem from="1663740941078" duration="19514000" />
-      <workItem from="1663866342245" duration="2882000" />
+      <workItem from="1663866342245" duration="3699000" />
+      <workItem from="1663916353597" duration="2908000" />
+      <workItem from="1664001631173" duration="1330000" />
+      <workItem from="1664002993418" duration="3325000" />
+      <workItem from="1664039187640" duration="19000" />
+      <workItem from="1664097616403" duration="3824000" />
+      <workItem from="1664116847110" duration="1418000" />
     </task>
     <task id="LOCAL-00001" summary="Fixing logging mechanism">
       <created>1663679157818</created>
@@ -319,7 +373,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663869048741</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Fixing logging mechanism">
+      <created>1663869724326</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1663869724326</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

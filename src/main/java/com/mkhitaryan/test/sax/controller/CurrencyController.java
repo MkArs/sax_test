@@ -12,7 +12,7 @@ public class CurrencyController {
     @Autowired
     private CurrencyService currencyService;
 
-    @RequestMapping("/converter")
+    @RequestMapping("/")
     public String openConverter(Model model){
         currencyService.updateCurrencies();
         model.addAttribute("allCurrencies", currencyService.fillCurrencyDropdown());
