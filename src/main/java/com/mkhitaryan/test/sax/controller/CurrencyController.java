@@ -1,5 +1,6 @@
 package com.mkhitaryan.test.sax.controller;
 
+import com.mkhitaryan.test.sax.entity.Operation;
 import com.mkhitaryan.test.sax.service.CurrencyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -15,8 +16,12 @@ public class CurrencyController {
     @RequestMapping("/")
     public String openConverter(Model model){
         currencyService.updateCurrencies();
+
         model.addAttribute("allCurrencies", currencyService.fillCurrencyDropdown());
+        model.addAttribute("operation", new Operation());
+
         return "converter";
     }
+
 
 }

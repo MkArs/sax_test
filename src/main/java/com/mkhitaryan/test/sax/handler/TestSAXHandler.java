@@ -21,23 +21,13 @@ public final class TestSAXHandler extends DefaultHandler {
 
     private String thisElement = null;
     private int currencyListIndex = 0;
-    //private StringBuffer result;
 
-    public TestSAXHandler(){
-        //result = new StringBuffer();
-    }
+    public TestSAXHandler(){}
 
     @Override
     public void startElement(String namespaceURI, String localName,
                              String qName, Attributes atts) throws SAXException {
         thisElement = qName;
-//имя тега
-        //result.append("Element name = '"+ qName+"'\n");
-
-//атрибуты тега
-//        for (int i = 0; i < atts.getLength(); i++){
-//            result.append("Attribute name = '" + atts.getQName(i) + "'; Attribute value = '" + atts.getValue(i)+"'\n");
-//        }
 
         if (qName == "Valute") {
             currencyList.add(new Currency());
@@ -46,16 +36,10 @@ public final class TestSAXHandler extends DefaultHandler {
     }
 
     @Override
-    public void characters(char[] ch, int start, int length)
-            throws SAXException {
-
+    public void characters(char[] ch, int start, int length) {
         String value = new String(ch, start, length);
 
-//        if (value.length() != 0)
-//                result.append("Element content = '" + value.trim() + "'\n");
         if (value.length() != 0){
-            //result.append("Element content = '" + value.trim() + "'\n");
-
             if(thisElement == "NumCode"){
                 currencyList.get(currencyListIndex).setNumcode(value);
             } else if (thisElement == "CharCode") {
@@ -71,12 +55,7 @@ public final class TestSAXHandler extends DefaultHandler {
     }
 
     @Override
-    public void endElement(String namespaceURI, String localName, String qName)
-            throws SAXException {
-
-//закрытие тега
-        //result.append("Element closed, name = '" + qName + "'\n");
-
+    public void endElement(String namespaceURI, String localName, String qName) {
         if (qName == "Valute") {
             currencyListIndex++;
         }

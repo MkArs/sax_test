@@ -30,7 +30,8 @@ public class Currency {
 
     public Currency(){}
 
-    public Currency(String numcode, String charcode, int nominal, String name, BigDecimal value) {
+    public Currency(String id, String numcode, String charcode, int nominal, String name, BigDecimal value) {
+        this.id = id;
         this.numcode = numcode;
         this.charcode = charcode;
         this.nominal = nominal;
