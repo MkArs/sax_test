@@ -8,13 +8,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
-@RequestMapping("/converter")
 public class OperationController {
 
     @Autowired
     private OperationService operationService;
 
-    @PostMapping()
+    @RequestMapping("/converter")
     @ResponseStatus(HttpStatus.OK)
     public void saveOperation(@ModelAttribute("operation") Operation operation){
         operationService.saveOperation(operation);
