@@ -2,7 +2,7 @@ package com.mkhitaryan.test.sax.entity;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
-import java.time.LocalDate;
+import java.sql.Date;
 
 @Entity
 @Table(name = "operations")
@@ -20,7 +20,7 @@ public class Operation {
     private String toCurrency;
 
     @Column(name = "date")
-    private LocalDate date;
+    private Date date;
 
     @Column(name = "sum")
     private BigDecimal sum;
@@ -31,11 +31,12 @@ public class Operation {
     @Column(name = "username")
     private String username;
 
-    public Operation(){}
+    public Operation() {
+    }
 
     public Operation(String fromCurrency,
                      String toCurrency,
-                     LocalDate date,
+                     Date date,
                      BigDecimal sum,
                      BigDecimal result,
                      String username) {
@@ -95,11 +96,11 @@ public class Operation {
         this.username = username;
     }
 
-    public LocalDate getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(LocalDate date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 }

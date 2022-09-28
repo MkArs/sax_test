@@ -10,14 +10,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9516f0ea-2ac1-46dc-add7-3d122d56ddd2" name="Changes" comment="Working on converter history">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/config/MySecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/config/MySecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/config/MySpringMvcDispatcherSerlvetIntitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/config/MySpringMvcDispatcherSerlvetIntitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/controller/CurrencyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/controller/CurrencyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/controller/OperationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/controller/OperationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/dao/OperationDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/dao/OperationDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/dao/OperationDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/dao/OperationDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/entity/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/entity/Operation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/service/OperationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/service/OperationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/service/OperationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/service/OperationServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/converter.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/converter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/config/MySecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/config/MySecurityConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/controller/CurrencyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/controller/CurrencyController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/controller/OperationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/controller/OperationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/dao/OperationDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/dao/OperationDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/dao/OperationDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/dao/OperationDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/entity/Operation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/entity/Operation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/service/OperationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/service/OperationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/service/OperationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/service/OperationServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/config/MySecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/config/MySecurityConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/controller/CurrencyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/controller/CurrencyController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/controller/OperationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/controller/OperationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/dao/OperationDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/dao/OperationDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/dao/OperationDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/dao/OperationDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/entity/Operation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/entity/Operation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/service/OperationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/service/OperationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/service/OperationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/service/OperationServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/views/converter.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/views/converter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/views/history.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/views/register.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +50,12 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,6 +87,7 @@
     &quot;OverrideImplement.combined&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/JDK_17&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -69,7 +95,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;bd86f3faa6c705a54c97a008dcd2b8c5&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -192,7 +218,11 @@
       <workItem from="1664097616403" duration="3824000" />
       <workItem from="1664116847110" duration="2058000" />
       <workItem from="1664129426840" duration="504000" />
-      <workItem from="1664167061882" duration="36712000" />
+      <workItem from="1664167061882" duration="41739000" />
+      <workItem from="1664257051488" duration="31465000" />
+      <workItem from="1664351233420" duration="12483000" />
+      <workItem from="1664375282336" duration="260000" />
+      <workItem from="1664375561180" duration="5549000" />
     </task>
     <task id="LOCAL-00001" summary="Fixing logging mechanism">
       <created>1663679157818</created>
@@ -383,7 +413,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664221900517</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Working on converter history">
+      <created>1664222966393</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1664222966393</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,21 +453,5 @@
     <MESSAGE value="Finished working on implementing login page and saving user info in DB" />
     <MESSAGE value="Working on converter history" />
     <option name="LAST_COMMIT_MESSAGE" value="Working on converter history" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/dao/OperationDAOImpl.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/controller/OperationController.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

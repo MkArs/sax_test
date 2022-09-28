@@ -2,10 +2,12 @@ package com.mkhitaryan.test.sax.service;
 
 import com.mkhitaryan.test.sax.entity.Operation;
 
+import java.sql.Date;
+import java.time.LocalDate;
 import java.util.List;
 
 public interface OperationService {
-    public void saveOperation(Operation operation);
+    void saveOperation(Operation operation);
 
-    public List<Operation> showOperations();
+    List<Operation> showOperations(Date date);
 }
