@@ -42,7 +42,7 @@ public class MySpringMvcDispatcherSerlvetIntitializer extends AbstractAnnotation
         EnumSet<DispatcherType> dispatcherTypes = EnumSet.of(DispatcherType.REQUEST, DispatcherType.FORWARD);
 
         CharacterEncodingFilter characterEncodingFilter = new CharacterEncodingFilter();
-        characterEncodingFilter.setEncoding("windows-1251");
+        characterEncodingFilter.setEncoding("Windows-1251");
         characterEncodingFilter.setForceEncoding(true);
 
         FilterRegistration.Dynamic characterEncoding = aContext.addFilter("characterEncoding", characterEncodingFilter);

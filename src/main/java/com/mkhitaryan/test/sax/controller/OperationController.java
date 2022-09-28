@@ -18,14 +18,14 @@ public class OperationController {
     @Autowired
     private OperationService operationService;
 
-    @PostMapping()
+    @PostMapping()// produces = "text/plain; charset=Windows-1251
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void saveOperation(@ModelAttribute("operation") Operation operation) {
         operationService.saveOperation(operation);
     }
 
     @ResponseBody
-    @GetMapping(value = "/dog", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = "/dog")
     public List<Operation> showOperations(@RequestParam(name = "date") Date date) {
         return operationService.showOperations(date);
     }
