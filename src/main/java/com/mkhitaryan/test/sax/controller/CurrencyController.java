@@ -7,8 +7,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import java.util.Date;
-
 @Controller
 public class CurrencyController {
 
@@ -21,7 +19,6 @@ public class CurrencyController {
 
         model.addAttribute("allCurrencies", currencyService.fillCurrencyDropdown());
         model.addAttribute("operation", new Operation());
-        // model.addAttribute("dateGet", new java.sql.Date(System.currentTimeMillis()));
 
         return "converter";
     }

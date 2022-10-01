@@ -33,9 +33,6 @@ public class OperationDAOImpl implements OperationDAO {
         operation.setDate(new java.sql.Date(System.currentTimeMillis())); //!!!
         operation.setUsername(username);
 
-        System.out.println(operation.getToCurrency());
-        System.out.println(operation.getFromCurrency());
-
         session.saveOrUpdate(operation);
     }
 
@@ -46,13 +43,6 @@ public class OperationDAOImpl implements OperationDAO {
                 .createQuery("from Operation where date = :chosenDate", Operation.class)
                 .setParameter("chosenDate", chosenDate)
                 .getResultList();
-        System.out.println(operationsAtDate.get(0).getId());
-        System.out.println(operationsAtDate.get(0).getFromCurrency());
-        System.out.println(operationsAtDate.get(0).getToCurrency());
-        System.out.println(operationsAtDate.get(0).getDate());
-        System.out.println(operationsAtDate.get(0).getSum());
-        System.out.println(operationsAtDate.get(0).getResult());
-        System.out.println(operationsAtDate.get(0).getUsername());
         return operationsAtDate;
     }
 }
