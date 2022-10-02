@@ -9,23 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9516f0ea-2ac1-46dc-add7-3d122d56ddd2" name="Changes" comment="Working on showing converter history">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/config/EncodingFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/config/EncodingFilterConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/28edfc32-63ad-4d58-b275-4a40b26a8b1f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/28edfc32-63ad-4d58-b275-4a40b26a8b1f.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/28edfc32-63ad-4d58-b275-4a40b26a8b1f/storage_v2/_src_/database/converter_db.fQMKLg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/28edfc32-63ad-4d58-b275-4a40b26a8b1f/storage_v2/_src_/database/converter_db.fQMKLg/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6eb9d86c-20a3-4148-a7e5-eeeb5b101de7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6eb9d86c-20a3-4148-a7e5-eeeb5b101de7/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6eb9d86c-20a3-4148-a7e5-eeeb5b101de7/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6eb9d86c-20a3-4148-a7e5-eeeb5b101de7/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6eb9d86c-20a3-4148-a7e5-eeeb5b101de7/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
+    <list default="true" id="9516f0ea-2ac1-46dc-add7-3d122d56ddd2" name="Changes" comment="The project is done. Looking towards configuring git.ignore file.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/config/MySecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/config/MySecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/controller/OperationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/controller/OperationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/entity/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/converter.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/converter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/config/MySecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mkhitaryan/test/sax/config/MySecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/config/MySecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/classes/com/mkhitaryan/test/sax/config/MySecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/config/EncodingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/config/EncodingFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/service/OperationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mkhitaryan/test/sax/service/OperationServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/sax_test/WEB-INF/views/converter.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/sax_test/WEB-INF/views/converter.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -221,7 +208,7 @@
       <workItem from="1664606698456" duration="6762000" />
       <workItem from="1664628648146" duration="5410000" />
       <workItem from="1664647752091" duration="8735000" />
-      <workItem from="1664688836775" duration="5392000" />
+      <workItem from="1664688836775" duration="7109000" />
     </task>
     <task id="LOCAL-00001" summary="Fixing logging mechanism">
       <created>1663679157818</created>
@@ -454,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664608859154</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="The project is done. Looking towards configuring git.ignore file.">
+      <created>1664694459646</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1664694459646</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,7 +481,8 @@
     <MESSAGE value="Finished working on implementing login page and saving user info in DB" />
     <MESSAGE value="Working on converter history" />
     <MESSAGE value="Working on showing converter history" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on showing converter history" />
+    <MESSAGE value="The project is done. Looking towards configuring git.ignore file." />
+    <option name="LAST_COMMIT_MESSAGE" value="The project is done. Looking towards configuring git.ignore file." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -88,7 +88,7 @@
 <script type = "text/javascript">
     function generateTable() {
         let opDate = document.getElementById("operationDate").value;
-        $.get("/dog", {"date": opDate},
+        $.get("/history", {"date": opDate},
             function (data) {
                 showData(data)
             })
