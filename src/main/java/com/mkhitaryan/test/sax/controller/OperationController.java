@@ -23,7 +23,7 @@ public class OperationController {
     }
 
     @ResponseBody
-    @GetMapping(value = "/dog")
+    @GetMapping(value = "/history")
     public List<Operation> showOperations(@RequestParam(name = "date") Date date) {
         return operationService.showOperations(date);
     }

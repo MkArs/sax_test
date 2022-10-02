@@ -8,7 +8,7 @@
 24677||24676|C|G
 24677||-9223372036854775808|T|G
 24677||24676|T|G</Grants>
-      <IntrospectionStateNumber>953</IntrospectionStateNumber>
+      <IntrospectionStateNumber>967</IntrospectionStateNumber>
       <ServerVersion>14.4</ServerVersion>
       <StartupTime>1663681218</StartupTime>
       <TimeZones>true ACDT
@@ -805,8 +805,10 @@ false Zulu
 13388||10|C|G
 13388||-9223372036854775808|U|G
 13388||10|U|G</Grants>
-      <IntrospectionStateNumber>953</IntrospectionStateNumber>
+      <IntrospectionStateNumber>967</IntrospectionStateNumber>
       <ObjectId>24677</ObjectId>
+      <Relations>sequence|table|24704|24705|1
+</Relations>
       <OwnerName>user_name</OwnerName>
     </database>
     <database id="3" parent="1" name="first_db">
@@ -4239,48 +4241,54 @@ false Zulu
     <schema id="264" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>953</IntrospectionStateNumber>
+      <IntrospectionStateNumber>967</IntrospectionStateNumber>
       <ObjectId>2200</ObjectId>
       <StateNumber>527</StateNumber>
       <OwnerName>postgres</OwnerName>
     </schema>
-    <table id="265" parent="264" name="authorities">
+    <sequence id="265" parent="264" name="operations_id_seq">
+      <DataType>integer|0s</DataType>
+      <ObjectId>24704</ObjectId>
+      <StateNumber>963</StateNumber>
+      <OwnerName>user_name</OwnerName>
+    </sequence>
+    <table id="266" parent="264" name="authorities">
       <ObjectId>24696</ObjectId>
-      <StateNumber>947</StateNumber>
+      <StateNumber>954</StateNumber>
       <AccessMethodId>2</AccessMethodId>
-      <OwnerName>postgres</OwnerName>
+      <OwnerName>user_name</OwnerName>
     </table>
-    <table id="266" parent="264" name="currencies">
+    <table id="267" parent="264" name="currencies">
       <ObjectId>24678</ObjectId>
-      <StateNumber>944</StateNumber>
+      <StateNumber>955</StateNumber>
       <AccessMethodId>2</AccessMethodId>
-      <OwnerName>postgres</OwnerName>
+      <OwnerName>user_name</OwnerName>
     </table>
-    <table id="267" parent="264" name="operations">
-      <ObjectId>24686</ObjectId>
-      <StateNumber>946</StateNumber>
+    <table id="268" parent="264" name="operations">
+      <ObjectId>24705</ObjectId>
+      <StateNumber>963</StateNumber>
       <AccessMethodId>2</AccessMethodId>
-      <OwnerName>postgres</OwnerName>
+      <OwnerName>user_name</OwnerName>
     </table>
-    <table id="268" parent="264" name="users">
+    <table id="269" parent="264" name="users">
       <ObjectId>24681</ObjectId>
-      <StateNumber>946</StateNumber>
+      <StateNumber>957</StateNumber>
       <AccessMethodId>2</AccessMethodId>
-      <OwnerName>postgres</OwnerName>
+      <OwnerName>user_name</OwnerName>
     </table>
-    <column id="269" parent="265" name="username">
+    <column id="270" parent="266" name="username">
       <DataType>varchar(15)|0s</DataType>
       <Position>1</Position>
       <StateNumber>947</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="270" parent="265" name="authority">
+    <column id="271" parent="266" name="authority">
       <DataType>varchar(25)|0s</DataType>
       <Position>2</Position>
       <StateNumber>947</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <foreign-key id="271" parent="265" name="authorities_username_fkey">
+    <foreign-key id="272" parent="266" name="authorities_username_fkey">
       <ColNames>username</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>24699</ObjectId>
@@ -4292,144 +4300,145 @@ false Zulu
       <RefTableName>users</RefTableName>
       <RefTableKind>table</RefTableKind>
     </foreign-key>
-    <column id="272" parent="266" name="id">
+    <column id="273" parent="267" name="id">
       <DataType>varchar(7)|0s</DataType>
       <Position>1</Position>
       <StateNumber>944</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="273" parent="266" name="nominal">
+    <column id="274" parent="267" name="nominal">
       <DataType>integer|0s</DataType>
       <Position>2</Position>
       <StateNumber>944</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="274" parent="266" name="name">
+    <column id="275" parent="267" name="name">
       <DataType>varchar(100)|0s</DataType>
       <Position>3</Position>
       <StateNumber>944</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="275" parent="266" name="value">
+    <column id="276" parent="267" name="value">
       <DataType>numeric(7,4 digit)|0s</DataType>
       <Position>4</Position>
       <StateNumber>944</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="276" parent="266" name="numcode">
+    <column id="277" parent="267" name="numcode">
       <DataType>char(3)|0s</DataType>
       <Position>5</Position>
       <StateNumber>944</StateNumber>
       <TypeId>1042</TypeId>
     </column>
-    <column id="277" parent="266" name="charcode">
+    <column id="278" parent="267" name="charcode">
       <DataType>char(3)|0s</DataType>
       <Position>6</Position>
       <StateNumber>944</StateNumber>
       <TypeId>1042</TypeId>
     </column>
-    <column id="278" parent="267" name="id">
+    <column id="279" parent="268" name="id">
       <DataType>integer|0s</DataType>
+      <DefaultExpression>nextval(&apos;operations_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>946</StateNumber>
+      <StateNumber>961</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="279" parent="267" name="fromcurrency">
+    <column id="280" parent="268" name="fromcurrency">
       <DataType>varchar(100)|0s</DataType>
       <Position>2</Position>
-      <StateNumber>946</StateNumber>
+      <StateNumber>961</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="280" parent="267" name="tocurrency">
+    <column id="281" parent="268" name="tocurrency">
       <DataType>varchar(100)|0s</DataType>
       <Position>3</Position>
-      <StateNumber>946</StateNumber>
+      <StateNumber>961</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="281" parent="267" name="date">
+    <column id="282" parent="268" name="date">
       <DataType>date|0s</DataType>
       <Position>4</Position>
-      <StateNumber>946</StateNumber>
+      <StateNumber>961</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="282" parent="267" name="sum">
+    <column id="283" parent="268" name="sum">
       <DataType>numeric(20,4 digit)|0s</DataType>
       <Position>5</Position>
-      <StateNumber>946</StateNumber>
+      <StateNumber>961</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="283" parent="267" name="result">
+    <column id="284" parent="268" name="result">
       <DataType>numeric(20,4 digit)|0s</DataType>
       <Position>6</Position>
-      <StateNumber>946</StateNumber>
+      <StateNumber>961</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="284" parent="267" name="username">
+    <column id="285" parent="268" name="username">
       <DataType>varchar(15)|0s</DataType>
       <Position>7</Position>
-      <StateNumber>946</StateNumber>
+      <StateNumber>961</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <foreign-key id="285" parent="267" name="operations_username_fkey">
+    <foreign-key id="286" parent="268" name="operations_username_fkey">
       <ColNames>username</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>24691</ObjectId>
+      <ObjectId>24711</ObjectId>
       <RefColNames>username</RefColNames>
       <RefColPositions>1</RefColPositions>
       <RefKeyName>users_pkey</RefKeyName>
-      <StateNumber>946</StateNumber>
+      <StateNumber>961</StateNumber>
       <RefTableId>24681</RefTableId>
       <RefTableName>users</RefTableName>
       <RefTableKind>table</RefTableKind>
     </foreign-key>
-    <index id="286" parent="267" name="operation_pkey">
+    <index id="287" parent="268" name="operation_pkey">
       <ColNames>id</ColNames>
-      <ObjectId>24689</ObjectId>
+      <ObjectId>24709</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>946</StateNumber>
+      <StateNumber>963</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="287" parent="267" name="operation_pkey">
+    <key id="288" parent="268" name="operation_pkey">
       <ColNames>id</ColNames>
-      <ObjectId>24690</ObjectId>
+      <ObjectId>24710</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>946</StateNumber>
-      <UnderlyingIndexId>24689</UnderlyingIndexId>
+      <StateNumber>961</StateNumber>
+      <UnderlyingIndexId>24709</UnderlyingIndexId>
     </key>
-    <column id="288" parent="268" name="username">
+    <column id="289" parent="269" name="username">
       <DataType>varchar(15)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>945</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="289" parent="268" name="password">
+    <column id="290" parent="269" name="password">
       <DataType>varchar(100)|0s</DataType>
       <Position>2</Position>
       <StateNumber>945</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="290" parent="268" name="enabled">
+    <column id="291" parent="269" name="enabled">
       <DataType>smallint|0s</DataType>
       <Position>3</Position>
       <StateNumber>945</StateNumber>
       <TypeId>21</TypeId>
     </column>
-    <index id="291" parent="268" name="users_pkey">
+    <index id="292" parent="269" name="users_pkey">
       <ColNames>username</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>24684</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>945</StateNumber>
+      <StateNumber>957</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
       <CollationNames>default</CollationNames>
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="292" parent="268" name="users_pkey">
+    <key id="293" parent="269" name="users_pkey">
       <ColNames>username</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>24685</ObjectId>

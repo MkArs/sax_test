@@ -32,11 +32,11 @@
 
         <br>
 
-        <button type="submit" style="background-color: gray; width: 225px; margin: 20px" onclick="conversionIntoDB();">Конвертировать</button>
+        <button type="submit" style="background-color: gray; width: 225px; margin: 20px" onclick="return conversionIntoDB();">Конвертировать</button>
     </div>
 </form>
 
-<form>
+<form id="historyForm">
     <h2 style="padding-top: 25px">История</h2>
 
     <div>
@@ -48,15 +48,6 @@
 
         <br>
     </div>
-    <table>
-        <tr>
-            <th>Исходная валюта</th>
-            <th>Целевая валюта</th>
-            <th>Исходная сумма</th>
-            <th>Полученная сумма</th>
-        </tr>
-    </table>
-
 </form>
 
 <script type = "text/javascript" th:src="@{/js/big.js}"></script>
@@ -67,7 +58,7 @@
     function conversionIntoDB(){
         let sumToConvert = document.getElementById("fromAmount").value;
 
-        if (!checkValidation(sumToConvert)) return;
+        if (!checkValidation(sumToConvert)) return false;
 
         const ROUNDING = 10000;
 
@@ -97,25 +88,58 @@
 <script type = "text/javascript">
     function generateTable() {
         let opDate = document.getElementById("operationDate").value;
-        let text = $.get("/dog", {"date": opDate});
-        console.log(text);
+        $.get("/dog", {"date": opDate},
+            function (data) {
+                showData(data)
+            })
+    }
+
+    function showData(data){
+        let historyTable = document.getElementById("historyTable");
+
+        if (historyTable != null) {
+            historyTable.remove();
+        }
         // creates a <table> element and a <tbody> element
         const tbl = document.createElement("table");
+
         const tblBody = document.createElement("tbody");
 
+        const row = document.createElement("tr");
+
+        const cell_fromName = document.createElement("th");
+        const cell_toName = document.createElement("th");
+        const cell_fromSum = document.createElement("th");
+        const cell_toSum = document.createElement("th");
+
+        const cell_fromName_text = document.createTextNode("Исходная валюта");
+        const cell_toName_text = document.createTextNode("Целевая валюта");
+        const cell_fromSum_text = document.createTextNode("Исходная сумма");
+        const cell_toSum_text = document.createTextNode("Полученная сумма");
+
+        cell_fromName.appendChild(cell_fromName_text);
+        cell_toName.appendChild(cell_toName_text);
+        cell_fromSum.appendChild(cell_fromSum_text);
+        cell_toSum.appendChild(cell_toSum_text);
+
+        row.appendChild(cell_fromName);
+        row.appendChild(cell_toName);
+        row.appendChild(cell_fromSum);
+        row.appendChild(cell_toSum);
+
+        tblBody.appendChild(row);
         // creating all cells
-        for (let i = 0; i < 4; i++) {
+        for (let i = 0; i < data.length; i++) {
             // creates a table row
             const row = document.createElement("tr");
 
-            for (let j = 0; j < 2; j++) {
-                // Create a <td> element and a text node, make the text
-                // node the contents of the <td>, and put the <td> at
-                // the end of the table row
-                const cell = document.createElement("td");
-                const cellText = document.createTextNode(`cell in row ${i}, column ${j}`);
-                cell.appendChild(cellText);
-                row.appendChild(cell);
+            for (let p in data[i]) {
+                if(p != 'id' && p != 'date' && p != 'username'){
+                    const cell = document.createElement("td");
+                    const cellText = document.createTextNode(`${data[i][p]}`);
+                    cell.appendChild(cellText);
+                    row.appendChild(cell);
+                }
             }
 
             // add the row to the end of the table body
@@ -128,6 +152,13 @@
         document.body.appendChild(tbl);
         // sets the border attribute of tbl to '2'
         tbl.setAttribute("border", "2");
+        tbl.setAttribute("id","historyTable")
+        tbl.style.textAlign = "center";
+        tbl.style.marginLeft = "auto";
+        tbl.style.marginRight = "auto";
+
+        let historyForm = document.getElementById("historyForm");
+        historyForm.appendChild(tbl);
     }
 </script>
 </body>
