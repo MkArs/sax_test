@@ -1,6 +1,6 @@
 CREATE TABLE IF NOT EXISTS public.operations
 (
-    id integer,
+    id SERIAL,
     fromcurrency character varying(100),
     tocurrency character varying(100),
     date date,

@@ -8,6 +8,7 @@ import org.xml.sax.helpers.DefaultHandler;
 import java.math.BigDecimal;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Objects;
 
 import static java.lang.Integer.parseInt;
 
@@ -22,14 +23,15 @@ public final class TestSAXHandler extends DefaultHandler {
     private String thisElement = null;
     private int currencyListIndex = 0;
 
-    public TestSAXHandler(){}
+    public TestSAXHandler() {
+    }
 
     @Override
     public void startElement(String namespaceURI, String localName,
                              String qName, Attributes atts) throws SAXException {
         thisElement = qName;
 
-        if (qName == "Valute") {
+        if (qName.equals("Valute")) {
             currencyList.add(new Currency());
             currencyList.get(currencyListIndex).setId(atts.getValue(0));
         }
@@ -39,30 +41,32 @@ public final class TestSAXHandler extends DefaultHandler {
     public void characters(char[] ch, int start, int length) {
         String value = new String(ch, start, length);
 
-        if (value.length() != 0){
-            if(thisElement == "NumCode"){
+        if (value.length() != 0) {
+            if (thisElement.equals("NumCode")) {
                 currencyList.get(currencyListIndex).setNumcode(value);
-            } else if (thisElement == "CharCode") {
+            } else if (thisElement.equals("CharCode")) {
                 currencyList.get(currencyListIndex).setCharcode(value);
-            } else if (thisElement == "Nominal") {
+            } else if (thisElement.equals("Nominal")) {
                 currencyList.get(currencyListIndex).setNominal(parseInt(value));
-            } else if (thisElement == "Name") {
+            } else if (thisElement.equals("Name")) {
                 currencyList.get(currencyListIndex).setName(value);
-            } else if (thisElement == "Value") {
-                currencyList.get(currencyListIndex).setValue(new BigDecimal(value.replace(',','.')));
+            } else if (thisElement.equals("Value")) {
+                currencyList.get(currencyListIndex).setValue(new BigDecimal(value.replace(',', '.')));
             }
         }
     }
 
     @Override
     public void endElement(String namespaceURI, String localName, String qName) {
-        if (qName == "Valute") {
+        if (qName.equals("Valute")) {
             currencyListIndex++;
         }
     }
 
-    public void clearEntityList(){
+    public void clearEntityList() {
         currencyListIndex = 0;
         currencyList.clear();
     }
+
+
 }
